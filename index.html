@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chudzah</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>chudzah</h1>
-    <p>hi hudzah</p>
+    <header>
+        <nav>
+            <span class="logo">chudzah</span>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle dark mode">Dark</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>chudzah</h1>
+            <p>hi hudzah</p>
+            <a href="#about" class="cta">Learn More</a>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About</h2>
+            <p>Welcome to Chudzah — a simple, clean landing page built from scratch.</p>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Fast</h3>
+                    <p>Lightweight and loads instantly with zero dependencies.</p>
+                </div>
+                <div class="card">
+                    <h3>Responsive</h3>
+                    <p>Looks great on mobile, tablet, and desktop.</p>
+                </div>
+                <div class="card">
+                    <h3>Minimal</h3>
+                    <p>Clean design with only what you need.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="card-grid">
+                <div class="card testimonial">
+                    <p class="quote">"Chudzah changed the way I think about landing pages. So clean."</p>
+                    <span class="author">— Hudzah</span>
+                </div>
+                <div class="card testimonial">
+                    <p class="quote">"Minimal, fast, and beautiful. Exactly what I needed."</p>
+                    <span class="author">— Muadh</span>
+                </div>
+                <div class="card testimonial">
+                    <p class="quote">"10/10 would chudzah again."</p>
+                    <span class="author">— Anonymous</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" placeholder="Your name" required>
+                <input type="email" placeholder="Your email" required>
+                <textarea placeholder="Your message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="theme.js"></script>
+    <footer>
+        <p>&copy; 2026 Chudzah. All rights reserved.</p>
+    </footer>
 </body>
 </html>
